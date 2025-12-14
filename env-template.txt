@@ -1,0 +1,11 @@
+# Discord Bot Token
+# احصل عليه من: https://discord.com/developers/applications
+DISCORD_BOT_TOKEN=YOUR_BOT_TOKEN_HERE
+
+# Discord Channel ID
+# اضغط بزر الماوس الأيمن على القناة > Copy ID (يجب تفعيل Developer Mode)
+DISCORD_CHANNEL_ID=YOUR_CHANNEL_ID_HERE
+
+# Server Port (اختياري)
+PORT=3000
+

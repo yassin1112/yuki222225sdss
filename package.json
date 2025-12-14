@@ -1,0 +1,26 @@
+{
+  "name": "yuki-store-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot for Yuki Store - يستقبل الطلبات من الموقع ويرسلها إلى Discord",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "yuki-store"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

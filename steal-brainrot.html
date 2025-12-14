@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steal a Brainrot - Yuki Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- مكتبات JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="products/steal-brainrot.js"></script>
+    <script src="config.js"></script>
+    <script src="load-products.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎮 Yuki Store</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="blox-fruits.html">Blox Fruits</a></li>
+                <li><a href="steal-brainrot.html" class="active">Steal a Brainrot</a></li>
+                <li><a href="murder-mystery-2.html">Murder Mystery 2</a></li>
+                <li><a href="robux.html">Robux</a></li>
+                <li>
+                    <a href="#" id="cartIcon" style="position: relative; cursor: pointer;">
+                        🛒
+                        <span id="cartCount" style="position: absolute; top: -8px; right: -8px; background: #f44336; color: white; border-radius: 50%; width: 20px; height: 20px; display: none; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="product-hero brainrot-hero">
+        <div class="container">
+            <h1 class="product-title">Steal a Brainrot</h1>
+            <p class="product-description">احصل على أفضل العناصر والأسلحة في Steal a Brainrot</p>
+        </div>
+    </section>
+
+    <section class="product-details">
+        <div class="container">
+            <div class="packages-grid" id="productsContainer">
+                <!-- Products will be loaded dynamically -->
+            </div>
+
+            <div class="product-info-section">
+                <h2>معلومات المنتج</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>⚡ تسليم فوري</h3>
+                        <p>احصل على منتجاتك خلال 5-10 دقائق بعد الشراء</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🔒 آمن 100%</h3>
+                        <p>جميع المنتجات أصلية وآمنة تماماً</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>💬 دعم فوري</h3>
+                        <p>فريق الدعم متاح 24/7 لمساعدتك</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yuki Store - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>إتمام عملية الشراء</h2>
+            <div class="order-summary">
+                <h3>سلة التسوق</h3>
+                <div id="cartItems" style="max-height: 300px; overflow-y: auto; margin-bottom: 15px;">
+                    <p style="text-align: center; color: #999;">السلة فارغة</p>
+                </div>
+                <div style="border-top: 2px solid #eee; padding-top: 15px; margin-top: 15px;">
+                    <p style="text-align: center; font-size: 18px;"><strong>المجموع الكلي:</strong> <span id="cartTotalPrice" style="color: #4CAF50; font-weight: bold;">0</span> دينار عراقي</p>
+                </div>
+            </div>
+            <form id="paymentForm" class="payment-form">
+                <div class="form-group">
+                    <label for="robloxUsername">اسم روبلوكس *</label>
+                    <input type="text" id="robloxUsername" name="robloxUsername" required placeholder="أدخل اسم روبلوكس">
+                </div>
+                <div class="form-group">
+                    <label for="asiaCardImages">صور كرت آسيا *</label>
+                    <input type="file" id="asiaCardImages" name="asiaCardImages" accept="image/*" multiple required>
+                    <div class="image-preview-container" id="imagePreviewContainer"></div>
+                    <small class="form-hint">يمكنك رفع أكثر من صورة</small>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">رقم واتساب *</label>
+                    <input type="text" id="whatsapp" name="whatsapp" required placeholder="مثال: 07701234567">
+                </div>
+                <div class="form-group">
+                    <label for="telegram">اسم تيليجرام *</label>
+                    <input type="text" id="telegram" name="telegram" required placeholder="مثال: @username">
+                </div>
+                <div class="payment-method">
+                    <h3>طريقة الدفع</h3>
+                    <p class="payment-info">💳 الدفع بالدينار العراقي عبر كرت آسيا</p>
+                </div>
+                <button type="submit" class="btn-submit">تأكيد الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

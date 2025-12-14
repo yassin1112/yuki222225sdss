@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuki Store - متجر روبلوكس</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- مكتبات JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎮 Yuki Store</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="blox-fruits.html">Blox Fruits</a></li>
+                <li><a href="steal-brainrot.html">Steal a Brainrot</a></li>
+                <li><a href="murder-mystery-2.html">Murder Mystery 2</a></li>
+                <li><a href="robux.html">Robux</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">مرحباً بك في متجر روبلوكس الأفضل</h1>
+            <p class="hero-subtitle">احصل على أفضل المنتجات بأفضل الأسعار</p>
+            <a href="#products" class="btn-primary">تصفح المنتجات</a>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">منتجاتنا المميزة</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image blox-fruits-bg">
+                        <div class="product-badge">الأكثر مبيعاً</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blox Fruits</h3>
+                        <p>احصل على أفضل الفواكه والقوى في Blox Fruits</p>
+                        <div class="product-price">من 15,000 دينار</div>
+                        <a href="blox-fruits.html" class="btn-card">عرض التفاصيل</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image brainrot-bg">
+                        <div class="product-badge">جديد</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Steal a Brainrot</h3>
+                        <p>احصل على أفضل العناصر في Steal a Brainrot</p>
+                        <div class="product-price">من 12,000 دينار</div>
+                        <a href="steal-brainrot.html" class="btn-card">عرض التفاصيل</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image murder-mystery-bg">
+                        <div class="product-badge">جديد</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Murder Mystery 2</h3>
+                        <p>احصل على أفضل السكاكين والعناصر في Murder Mystery 2</p>
+                        <div class="product-price">من 10,000 دينار</div>
+                        <a href="murder-mystery-2.html" class="btn-card">عرض التفاصيل</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image robux-bg">
+                        <div class="product-badge">شائع</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Robux</h3>
+                        <p>احصل على عملة Robux الرسمية</p>
+                        <div class="product-price">من 9,000 دينار</div>
+                        <a href="robux.html" class="btn-card">عرض التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">لماذا نحن الأفضل؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>تسليم فوري</h3>
+                    <p>احصل على منتجاتك خلال دقائق</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>آمن ومضمون</h3>
+                    <p>معاملات آمنة 100%</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>جودة عالية</h3>
+                    <p>منتجات أصلية وموثوقة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>دعم 24/7</h3>
+                    <p>خدمة عملاء متاحة دائماً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yuki Store - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
